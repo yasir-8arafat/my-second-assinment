@@ -27,6 +27,28 @@
   transition: 0.4s;
   cursor: pointer;
 }
+.c-hdi{
+  font-size: 46px;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+}
+.c-bh{
+  font-size: 24.5px;
+  font-weight: bold;
+  color: #202020;
+  margin-bottom: 42px;
+}
+.sm-tx{
+  font-size: 15px;
+  font-weight: 500;
+  color: #666666;
+}
+.mai-s{
+  background-image: url(../assets/bg.png);
+  background-position: center;
+  background-repeat: repeat-y;
+}
 /* navbar style */
 .navbar{
   justify-content: space-between;
@@ -79,6 +101,51 @@
 .b-btn{
   background-color: #111111;
 }
+/* standered curriculum style start */
+.st-cd1{
+  max-width: 1090px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 28px;
+}
+.ki{
+  background: linear-gradient(to top,#FFFFFF,#DEF5FF);
+  text-align: center;
+  border-radius: 18px;
+  box-shadow: 30px 40px 29px 5px rgba(0, 0, 0, 0.05);
+}
+.el{
+  background: linear-gradient(to top,#FFFFFF,#FFF4DC);
+  text-align: center;
+  border-radius: 18px;
+  box-shadow: 30px 40px 29px 5px rgba(0, 0, 0, 0.05);
+}
+.mi{
+  background: linear-gradient(to top,#FFFFFF,#F2E8FF);
+  text-align: center;
+  border-radius: 18px;
+  box-shadow: 30px 40px 29px 5px rgba(0, 0, 0, 0.05);
+}
+/* round button design */
+.arr{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: #FEA301;
+  font-size: 45px;
+  color: #FFFFFF;
+  border: none;
+  padding: auto;
+}
+.arr:hover{
+  background-color: aqua;
+  cursor: pointer;
+}
+.bt{
+  text-align: center;
+  margin-top: 80px;
+}
 /* responsive style */
 @media screen and (max-width: 576px){
   /* navbar responsive */
@@ -101,16 +168,12 @@
     height: 2px;
     margin-top: 10px;
   }
-  /* .navbar{
-    justify-content: space-between;
-  } */
-  /* .d1{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    row-gap: 80px;
-  } */
-  /* banner responsive */
+  .navbar{
+    margin: 0;
+  }
+  .bd{
+    display: none;
+  }
   .banner{
     flex-direction: column-reverse;
   }
@@ -120,5 +183,12 @@
   .b-img > img{
     width: 336px;
     height: 413px;
+  }
+  /* standered curriculum responsive */
+  .arr{
+    display: none;
+  }
+  .st-cd1{
+    grid-template-columns: repeat(1,1fr);
   }
 }
