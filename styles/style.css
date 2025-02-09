@@ -48,6 +48,7 @@
   background-image: url(../assets/bg.png);
   background-position: center;
   background-repeat: repeat-y;
+  background-color: #666666;
 }
 /* navbar style */
 .navbar{
@@ -102,6 +103,9 @@
   background-color: #111111;
 }
 /* standered curriculum style start */
+.st-c{
+  background-image: url(../assets/bg.png);
+}
 .st-cd1{
   max-width: 1090px;
   margin: 0 auto;
@@ -148,7 +152,6 @@
 }
 /* stories design start */
 .sp{
-  right: 500px;
   font-size: 15px;
   font-weight: 500;
   color: #FFFFFF;
@@ -157,13 +160,18 @@
   background-color: #3CD8E8;
   border: none;
 }
+.sp:hover{
+  background-color: tan;
+  transition: 0.4s;
+  cursor: pointer;
+}
 .big{
   border: 1px solid black;
   border-radius: 15px;
   background-color: #FFFFFF;
 }
 .stories{
-  max-width: 1090px;
+  max-width: 1168px;
   margin: 0 auto;
   background-image: url(../assets/bg.png);
   background-position: top;
@@ -185,6 +193,9 @@
   border: 1px solid black;
   border-radius: 10px 10px 10px 10px;
   background-color: #FFFFFF;
+}
+.b-1 > img{
+  border-radius: 10px 10px 0 0;
 }
 .c-1{
   position: relative;
@@ -210,6 +221,10 @@
   display: flex;
   flex-direction: column;
 }
+.fd3 > div{
+  display: flex;
+  gap: 10px;
+}
 .area{
   display: flex;
   justify-content: center;
@@ -224,7 +239,7 @@
   align-items: center;
 }
 /* responsive style */
-@media screen and (max-width: 576px){
+@media screen and (max-width: 1024px){
   /* navbar responsive */
   .navbar h2{
     display: none;
@@ -268,22 +283,34 @@
   .st-cd1{
     grid-template-columns: repeat(1,1fr);
   }
+  .stories{
+    margin: 0;
+  }
   .big{
     display: none;
   }
   .sub-container{
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(2,1fr);
     gap: 5px;
     max-width: 100%;
   }
   .bbc1{
-    padding: 0;
+    padding: 10px;
   }
   .area{
     flex-direction: column;
   }
   .foot{
-    padding: 0px;
+    padding: 20px;
+  }
+  .b-1 img{
+    width: 100%;
+  }
+  .sp{
+    font-size: 9.13px;
+    padding: 6px 11px;
+    top: -18px;
+    left: 15px;
   }
 }
